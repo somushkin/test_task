@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Add</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+	<form action="add.php" method="post" accept-charset="UTF-8">
+		Тип сотрудника:<br> 
+		<input type="radio" name="position" value="employee" required />Работник<br>
+		<input type="radio" name="position" value="head" required />Руководитель подразделения<br>
+		<input type="radio" name="position" value="other" required />Другое<br>
+		<br>
+		ФИО: 
+			<input type="text" name="name" required /><br><br>
+		Дата рождения: 
+			<input type="date" name="b_date" required /><br><br>
+		Дата принятия на работу: 
+			<input type="date" name="w_date" required /><br><br>
+		<div id="type"></div>
+		<br>
+			<input type="submit" value="Добавить" />
+	</form>
+	<br>
+	<a href="/">На главную</a><br>
+	<a href="/show.php">Список сотрудников</a>
+</body>
+</html>
